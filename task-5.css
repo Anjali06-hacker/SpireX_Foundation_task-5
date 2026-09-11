@@ -1,0 +1,210 @@
+/* BASIC RESET
+   Removes default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*   BODY */
+body {
+    /* Font used on the webpage */
+    font-family: Arial, sans-serif;
+    /* Light background */
+    background-color: #eef2f7;
+    /* Basic text color */
+    color: #333;
+}
+/* TESTIMONIALS SECTION */
+.testimonials-section {
+    /* Minimum height of the webpage */
+    min-height: 100vh;
+    /* Space around the section */
+    padding: 60px 20px;
+    /* Centers the content */
+    text-align: center;
+}
+/* MAIN HEADING */
+.testimonials-section h1 {
+    /* Heading color */
+    color: #243b55;
+    /* Heading size */
+    font-size: 36px;
+    /* Space below heading */
+    margin-bottom: 10px;
+}
+/* SUBTITLE */
+.subtitle {
+    /* Gray text */
+    color: #666;
+    /* Space below subtitle */
+    margin-bottom: 40px;
+    /* Line spacing */
+    line-height: 1.5;
+}
+/* TESTIMONIAL SLIDER */
+.testimonial-slider {
+    /* Limits the width of the card */
+    max-width: 650px;
+    /* Centers the slider */
+    margin: auto;
+}
+/* TESTIMONIAL CARD */
+.testimonial-card {
+    /* White card background */
+    background-color: white;
+    /* Space inside card */
+    padding: 40px 35px;
+    /* Rounded corners */
+    border-radius: 12px;
+    /* Shadow around card */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+    /* Hide cards by default */
+    display: none;
+}
+/*  ACTIVE TESTIMONIAL */
+/*  JavaScript adds the "active" class to the
+    testimonial that should currently be displayed. */
+.testimonial-card.active {
+    /* Display the active card */
+    display: block;
+}
+/* CUSTOMER IMAGE */
+.customer-image {
+    /* Creates a circular shape */
+    width: 75px;
+    height: 75px;
+    /* Centers the circle */
+    margin: 0 auto 15px;
+    /* Circle background */
+    background-color: #243b55;
+    /* White initials */
+    color: white;
+    /* Makes initials bold */
+    font-weight: bold;
+    /* Centers initials horizontally */
+    display: flex;
+    justify-content: center;
+    /* Centers initials vertically */
+    align-items: center;
+    /* Makes it circular */
+    border-radius: 50%;
+    /* Text size */
+    font-size: 20px;
+}
+/* STAR RATING */
+.rating {
+    /* Star color */
+    color: #f5a623;
+    /* Space below stars */
+    margin-bottom: 20px;
+    /* Star size */
+    font-size: 20px;
+}
+/* TESTIMONIAL TEXT */
+.testimonial-text {
+    /* Text size */
+    font-size: 17px;
+    /* Line spacing */
+    line-height: 1.7;
+    /* Gray text */
+    color: #555;
+    /* Space below testimonial */
+    margin-bottom: 20px;
+}
+/* CUSTOMER NAME */
+.testimonial-card h2 {
+    /* Customer name color */
+    color: #243b55;
+    /* Font size */
+    font-size: 20px;
+    /* Space below name */
+    margin-bottom: 5px;
+}
+/* CUSTOMER ROLE */
+.customer-role {
+    /* Gray role text */
+    color: #777;
+    /* Smaller font */
+    font-size: 14px;
+}
+/* SLIDER CONTROLS */
+.slider-controls {
+    /* Places buttons and dots in a row */
+    display: flex;
+    /* Centers controls */
+    justify-content: center;
+    /* Aligns vertically */
+    align-items: center;
+    /* Space between controls */
+    gap: 20px;
+    /* Space above controls */
+    margin-top: 25px;
+}
+/* PREVIOUS / NEXT BUTTONS */
+.slider-controls button {
+    /* Button background */
+    background-color: #243b55;
+    /* White arrow */
+    color: white;
+    /* Removes default border */
+    border: none;
+    /* Button size */
+    width: 40px;
+    height: 40px;
+    /* Makes button circular */
+    border-radius: 50%;
+    /* Shows pointer on hover */
+    cursor: pointer;
+    /* Font size */
+    font-size: 18px;
+}
+/* Button hover effect */
+.slider-controls button:hover {
+    /* Darker background */
+    background-color: #141e30;
+}
+/* DOT CONTAINER */
+.dots {
+    /* Displays dots in a row */
+    display: flex;
+    /* Space between dots */
+    gap: 8px;
+}
+/* INDIVIDUAL DOT */
+.dot {
+    /* Dot width */
+    width: 10px;
+    /* Dot height */
+    height: 10px;
+    /* Gray inactive dot */
+    background-color: #bbb;
+    /* Makes dot circular */
+    border-radius: 50%;
+    /* Shows pointer */
+    cursor: pointer;
+}
+/* Active dot */
+.dot.active {
+    /* Dark color for active dot */
+    background-color: #243b55;
+}
+/* RESPONSIVE DESIGN */
+/* Changes the layout for smaller screens. */
+@media (max-width: 600px) {
+    /* Reduce section spacing */
+    .testimonials-section {
+        padding: 45px 15px;
+    }
+    /* Smaller heading */
+    .testimonials-section h1 {
+        font-size: 28px;
+    }
+    /* Smaller testimonial card */
+    .testimonial-card {
+        padding: 30px 20px;
+    }
+    /* Smaller testimonial text */
+    .testimonial-text {
+        font-size: 15px;
+    }
+}
